@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "satset dev",
-    "build": "satset build",
+    "build": "npm run build --workspace=satset-react --prefix .. && satset build",
     "start": "satset start",
     "preview": "satset preview",
     "lint": "tsc --noEmit"

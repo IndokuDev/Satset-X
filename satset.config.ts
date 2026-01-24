@@ -16,4 +16,5 @@ export default defineConfig({
   experimental: {
     optimizePackageImports: ["@chakra-ui/react", "lucide-react", "@icons-pack/react-simple-icons"],
   },
+  adapter: "vercel"
 });
