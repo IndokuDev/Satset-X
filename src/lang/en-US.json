@@ -1,0 +1,18 @@
+{
+  "home.title": "Satset Documentation",
+  "home.description": "Documentation for the Satset project.",
+  "home.welcome": "Welcome to the docs.",
+
+  "auth.login.title": "Satset Login Simulation",
+  "auth.login.description": "A simple login page simulation using Satset framework.",
+
+  "auth.register.title": "Satset Register Simulation",
+  "auth.register.description": "A simple register page simulation using Satset framework.",
+
+  "auth.title": "Satset Authentication Simulation",
+  "auth.description": "A simulation of authentication pages using Satset framework.",
+
+  "auth.register.button": "Register",
+  "auth.login.button": "Login"
+}
+

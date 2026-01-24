@@ -1,0 +1,18 @@
+{
+  "home.title": "Dokumentasi Satset",
+  "home.description": "Dokumentasi untuk proyek Satset.",
+  "home.welcome": "Selamat datang di dokumentasi.",
+
+  "auth.login.title": "Satset Simulasi Masuk",
+  "auth.login.description": "Halaman simulasi login sederhana menggunakan Satset.",
+
+  "auth.register.title": "Satset Simulasi Daftar",
+  "auth.register.description": "Halaman simulasi registrasi sederhana menggunakan Satset.",
+
+  "auth.title": "Simulasi Otentikasi Satset",
+  "auth.description": "Simulasi halaman otentikasi menggunakan Satset.",
+
+  "auth.register.button": "Daftar",
+  "auth.login.button": "Masuk"
+}
+
