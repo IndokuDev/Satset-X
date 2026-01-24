@@ -1,5 +1,5 @@
 import React from 'react';
-import { getProductById } from '@/lib/db';
+import { getProductById } from '@/lib/data';
 
 export async function getMetadata({ params }: { params: { slug: string } }) {
   const product = getProductById(params.slug);

@@ -9,6 +9,9 @@ export async function getMetadata({ t }) {
 }
 
 export default function Auth() {
+  const { t } = useTranslation();
+  const router = useRouter();
+
   return (
     <div>
       <h1>{t("auth.title")}</h1>

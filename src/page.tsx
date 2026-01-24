@@ -51,7 +51,7 @@ export default function Home() {const [theme, setTheme] = useState("light");
               <strong>Middleware:</strong>
               <ul className="list-circle pl-5 mt-1">
                 <li><a href="/admin" className="text-blue-500 underline">Protected Route (/admin) - Expect 401</a></li>
-                <li><a href="/old-shop/product" className="text-blue-500 underline">Rewrite (/old-shop -> /shop)</a></li>
+                <li><a href="/old-shop/product" className="text-blue-500 underline">Rewrite (/old-shop to /shop)</a></li>
               </ul>
             </li>
             <li>

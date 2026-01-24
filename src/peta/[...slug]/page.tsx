@@ -1,5 +1,5 @@
 import React from 'react';
-import { findShopByPath } from '@/lib/db';
+import { findShopByPath } from '@/lib/data';
 
 interface Props {
   params: { slug: string[] };
