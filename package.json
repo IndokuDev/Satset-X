@@ -1,23 +1,23 @@
 {
   "name": "satset-documentation",
-  "version": "0.0.1",
-  "private": true,
+  "version": "1.0.0",
+  "private": false,
   "scripts": {
     "dev": "satset dev",
     "build": "satset build",
     "start": "satset start",
-    "preview": "satset preview",
-    "lint": "tsc --noEmit"
+    "preview": "satset preview"
   },
   "dependencies": {
     "@chakra-ui/react": "^3.31.0",
     "@emotion/react": "^11.14.0",
+    "dotenv": "^17.2.3",
     "jsonwebtoken": "^9.0.2",
     "pg": "^8.16.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^5.5.0",
-    "satset-react": "^0.3.9"
+    "satset-react": "^0.4.8"
   },
   "devDependencies": {
     "@types/node": "^20.0.0",

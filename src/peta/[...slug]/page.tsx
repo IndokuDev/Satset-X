@@ -1,13 +1,70 @@
-import React from 'react';
-import { findShopByPath } from '@/lib/data';
 
 interface Props {
   params: { slug: string[] };
 }
-
+const getShop = [
+  {
+    id: "1",
+    title: "Shop Keren",
+    description: "Ini adalah shop keren yang sangat nyaman digunakan.",
+    images: [
+      "/favicon.png",
+    ], 
+    items: [
+      {
+        id: "1",
+        title: "Item Keren",
+        description: "Ini adalah item keren yang sangat nyaman digunakan.",
+        price: 1000000,
+      },
+      {
+        id: "2",
+        title: "Item Lainnya",
+        description: "Ini adalah item lainnya yang sangat nyaman digunakan.",
+        price: 1000000,
+      },
+      {
+        id: "3",
+        title: "Item Lainnya",
+        description: "Ini adalah item lainnya yang sangat nyaman digunakan.",
+        price: 1000000,
+      },
+    ],
+  },
+  {
+    id: "2",
+    title: "Shop Lainnya",
+    description: "Ini adalah shop lainnya yang sangat nyaman digunakan.",
+    images: [
+      "/favicon.png",
+    ],
+    items: [
+      {
+        id: "1",
+        title: "Item Keren",
+        description: "Ini adalah item keren yang sangat nyaman digunakan.",
+        price: 1000000,
+      },
+      {
+        id: "2",
+        title: "Item Lainnya",
+        description: "Ini adalah item lainnya yang sangat nyaman digunakan.",
+        price: 1000000,
+      },
+      {
+        id: "3",
+        title: "Item Lainnya",
+        description: "Ini adalah item lainnya yang sangat nyaman digunakan.",
+        price: 1000000,
+      },
+    ],
+  },
+];
 export async function getMetadata({ params }: { params: { slug: string[] } }) {
+  
   const slugPath = params.slug ? params.slug.join('/') : '';
-  const shop = findShopByPath(slugPath);
+
+  const shop = getShop.find((item) => item.id === slugPath);
   if (!shop) return { title: 'Not found' };
   return {
     title: shop.title,
@@ -17,7 +74,7 @@ export async function getMetadata({ params }: { params: { slug: string[] } }) {
 
 export default function ShopPage({ params }: Props) {
   const slugPath = params.slug ? params.slug.join('/') : '';
-  const shop = findShopByPath(slugPath);
+  const shop = getShop.find((item) => item.id === slugPath);
 
   if (!shop) {
     return (

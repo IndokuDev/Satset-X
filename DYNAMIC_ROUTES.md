@@ -1,8 +1,42 @@
 Ringkas: Dynamic routes ala Next.js (Next App Router style) tanpa Next — didukung di Satset.
+⚪️ *Jenjang SMA/SMK/MA/Sederajat*
+
+1. AKUNTANSI
+https://forms.gle/NqtCtgc6Ceq5XAft7
+
+2. BAHASA INDONESIA
+https://forms.gle/C2R73KQG7dKFh8qT7
+
+3. BAHASA INGGRIS
+https://forms.gle/NgAKgPN5GBgoxBrQ9
+
+4. BIOLOGI
+https://forms.gle/6L1B3gNmFTpKmces6
+
+5. EKONOMI
+https://forms.gle/NGQcA3HGyTkJEuCj6
+
+6. FISIKA
+https://forms.gle/563o6YwQdpnSuAbo9
+
+7. KEDOKTERAN
+https://forms.gle/kXT17rrT1L8nGQkh7
+
+8. KIMIA
+https://forms.gle/iz6crN4zbku1BRs3A
+
+9. MATEMATIKA
+https://forms.gle/bb5GDJ6ZDnuJjNdj8
+
+10. PENGETAHUAN UMUM
+https://forms.gle/xTKayMZ4f2MM4T6v5
+
+11. PPKN/WAWASAN KEBANGSAAN
+https://forms.gle/tKHKn5pwSygNYsAd6
 
 Cara pakai (App Router):
 
-- Buat folder: `src/app/product/[id]/page.tsx`
+- Buat folder: `src/product/[id]/page.tsx`
 - Di dalam `page` komponen, terima `params` props atau gunakan `useParams()` jika di client
 
 Contoh (TypeScript):

@@ -1,8 +1,27 @@
-import React from 'react';
-import { getProductById } from '@/lib/data';
+const getProduct = [
+  {
+    id: "1",
+    title: "Sepatu Keren",
+    description: "Ini adalah sepatu keren yang sangat nyaman digunakan.",
+    price: 1000000,
+    images: [
+      "/favicon.png",
+    ],
+  },
+  {
+    id: "2",
+    title: "Sepatu Lainnya",
+    description: "Ini adalah sepatu lainnya yang sangat nyaman digunakan.",
+    price: 2000000,
+    images: [
+      "/favicon.png",
+    ],
+  },
+];
 
 export async function getMetadata({ params }: { params: { slug: string } }) {
-  const product = getProductById(params.slug);
+
+  const product = getProduct.find((item) => item.id === params.slug);
   if (!product) return { title: 'Product Not Found' };
   return {
     title: product.title,
@@ -12,7 +31,7 @@ export async function getMetadata({ params }: { params: { slug: string } }) {
 
 export default function ProductPage({ params }: { params: { slug: string } }) {
   const { slug } = params;
-  const product = getProductById(slug);
+  const product = getProduct.find((item) => item.id === slug);
 
   if (!product) {
     return (
