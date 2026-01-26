@@ -18,7 +18,19 @@ export async function getMetadata() {
   };
 }
 
-export default function RootLayout({ children, locale = 'en-US' }: { children: React.ReactNode, locale?: string }) {
+export default function RootLayout({ children, locale = 'en-US', hasChildLayout }: { children: React.ReactNode, locale?: string, hasChildLayout?: boolean }) {
+  if (hasChildLayout) {
+    return (
+      <html lang={locale} suppressHydrationWarning>
+        <body>
+          <Provider>
+            {children}
+          </Provider>
+        </body>
+      </html>
+    );
+  }
+
   return (
     <html lang={locale} suppressHydrationWarning>
       <body>
